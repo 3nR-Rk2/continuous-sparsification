@@ -54,8 +54,8 @@ def ImageNet_generate_loaders(batch_size, n_workers, distributed):
       
     n_classes = 1000
     
-    traindir = '/mnt/nfs/sandbox/ai-research_tmp/ILSVRC2012_img_train'
-    valdir = '/mnt/nfs/sandbox/ai-research_tmp/ILSVRC2012_img_val_for_ImageFolder'
+    traindir = './ILSVRC2012_img_train'
+    valdir = './ILSVRC2012_img_val_for_ImageFolder'
 
     train_dataset = datasets.ImageFolder(traindir, transform=train_transform)
     val_dataset = datasets.ImageFolder(valdir, transform=val_transform)
